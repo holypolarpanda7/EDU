@@ -1,0 +1,45 @@
+
+
+                                Python Programming
+                                   Summer 2018
+                                    Project 4
+        
+
+turnin code: py_p4
+
+
+Write a python program that computes the number of prime numbers between
+specified low and high values, inclusive.  The low and high will be
+provided as the first and second command-line arguments; these arguments
+will be greater than 2.  Note that you only keep the number of primes
+found and not the primes themselves.
+
+Your program should use the p4primetest.py module to test for prime.
+
+The mainline program should NOT perform any of the computation.
+Instead, it should use the third command-line argument, an integer,
+to tell it how many worker processes to create to compute the results.
+The mainline should divide the range of work as evenly as possible among
+the worker processes.
+
+Use the Process facility of the multiprocessing module to create the
+worker processes.  Use the Queue facility of the multiprocessing module
+to retrieve the results from the worker processes.
+
+Use the time.time facility in the mainline to determine the amount of time
+between the time that the worker processes are "start"ed and are "join"ed.
+
+Print out the number of primes found followed by the amount of time for
+the job on a single line, separated by about 8 blanks, and with no
+other words or information.
+
+Some simple tests might be:
+
+        python3  p4.py  3  103  1
+        python3  p4.py  3  103  2
+        python3  p4.py  3  103  3
+
+If those all show 26 primes, then run larger tests.
+
+
+Use turnin to submit only your python source file.

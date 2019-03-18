@@ -1,0 +1,45 @@
+
+
+                            Python Programming
+                               Summer 2018
+                                Project 3
+
+
+turnin code:  py_p3
+
+
+Write a python3 module named
+    p3mod.py
+which can be imported and used as in the sample p3main.py program.
+
+The module should provide the function named
+    find_starts
+which receives a DNA string to analyze.
+That function *must* be implemented as a generator which can in turn use
+additional generators or generator-expressions if you wish.
+
+The program should analyze each input line and print out information about
+each valid start codon found, and where each is located (relative to 0).
+
+Valid start codons are 'atg' and 'gtg'.
+Input may be in either upper or lower case.
+
+To test, I will run p3main.py multiple times with various inputs.
+Each test will import your p3mod.py module.
+Each test will be run in this manner:
+
+    python3 p3main.py some_input_filename
+
+If the input file contains these lines:
+
+    s1   catgccccgtgaaaa
+    stwo ccgtgccccctgaaa
+    s3   ccctgccccctgaaa
+
+then, the program would print:
+
+    s1 ('atg', 1) ('gtg', 8)
+    stwo ('gtg', 2)
+    s3
+
+Use turnin to submit only your python source file.

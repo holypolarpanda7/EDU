@@ -1,0 +1,5 @@
+#!/bin/sh
+
+nc -q 1 -i 2 system64 10000  <<EOF
+get ron
+EOF

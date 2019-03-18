@@ -1,0 +1,54 @@
+
+
+                                Python Programming
+                                   Summer 2018
+                                    Project 5
+        
+
+turnin code: py_p5
+
+
+Write a python program that takes 4 command-line arguments.
+The arguments are:
+    
+    hash type (from hashlib)
+    number of digits in nonce 
+    number of leading 0's in result hash
+    string to create hash for
+
+A valid invocation would be:
+
+    python3 p5.py  sha256  6  5  harry_potter
+
+The program should comupute all valid nonces of the specified length.
+Each digit of the nonce will be a base 10 digit (0-9).
+For each nonce, compute the concatenation of the nonce and the string,
+and compute a hash for the concatenated string.
+If the number of digits in the nonce is 3, then there will be 1000
+nonces, 000-999.  Thus, you would compute 1000 hashes.
+
+Count the number of hashes that begin with the correct number of 0's.
+
+The hashlib module's hash facilities and *hexdigest* should be combined and
+used to compute the required hashes.
+
+The module named itertools has facilities that may be useful in computing
+the nonces.
+
+The program should print the string on a single line, followed by
+each nonce and the hash produced from the nonce and string concatenation.
+
+A run like this one:
+
+    python3 p5.py sha1 4 3 ok
+
+would produce output like this:
+
+ok
+    2103 00062c1af57faf045ced30628bc71062ebec141d
+    3381 00096e31025d03cfcf0bd14df65f6985af62fd38
+    3428 000c03a1c3d2e784eb49f885f22204765438eb88
+3
+
+
+Use turnin to submit only your python source file.

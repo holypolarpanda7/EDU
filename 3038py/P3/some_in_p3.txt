@@ -1,0 +1,5 @@
+s1   catgccccgtgaaaa
+    stwo ccgtgccccctgaaa
+    s3   ccctgccccctgaaa
+s4 cccccccccgtgatgtgccccccctag
+s5 ccatgtgatgtagccccccc

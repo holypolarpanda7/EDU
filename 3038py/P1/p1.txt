@@ -1,0 +1,25 @@
+
+                            Python Programming
+                               Summer 2018
+                                Project 1
+
+
+turnin code:  py_p1
+
+
+Write a python (3.4+) program that uses the dart-throwing algorithm to compute pi.
+Count points on the circle as being inside the circle.
+
+I will run the program this way:
+
+    python3 yourpgmname  N
+
+where N is the number of darts to throw.
+
+Print:
+    pi estimate = xxxxx
+
+where you replace xxxxx with the computed estimate of pi.
+
+Use turnin to submit only your python source file.
+

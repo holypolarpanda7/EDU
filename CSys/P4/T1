@@ -1,0 +1,21 @@
+#!/bin/sh
+
+cat > TEMPIN <<EOF
+44+55
+22*5+1
+8/3
+EOF
+
+echo
+echo RMB 99 111 2 "  <--------"
+./p4 TEMPIN
+
+echo
+echo RMB 99 111 2.666 "  <--------"
+./p4 TEMPIN -l
+
+echo
+pwd
+echo
+
+rm -f TEMPIN

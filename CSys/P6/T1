@@ -1,0 +1,40 @@
+#!/bin/sh
+
+echo
+ldd p6
+echo
+sleep 1
+
+nm p6.so | grep timestamp
+sleep 1
+
+
+echo
+echo RMB sqrt 4 is 2.0
+echo
+
+./p6  libm-2.24.so   sqrt 4.0
+
+echo
+echo RMB pow 4 3  is 64.0
+echo
+
+./p6  libm-2.24.so   pow  4.0  3.0
+
+echo
+echo
+echo RMB cos 0.5  is 0.88
+echo
+
+./p6  libm-2.24.so   cos  0.5
+
+echo
+echo RMB timestamp value
+echo
+
+export LD_LIBRARY_PATH=.
+./p6  p6.so  timestamp
+
+echo
+pwd
+echo

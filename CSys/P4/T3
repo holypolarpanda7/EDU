@@ -1,0 +1,17 @@
+#!/bin/sh
+
+cat > TEMPIN <<EOF
+print "ABC\nDEF\n"
+a = 765 + 8000
+print "a is ", a, "\n"
+EOF
+
+echo
+echo RMB ABC DEF a is 8765 "  <--------"
+./p4 TEMPIN
+
+echo
+pwd
+echo
+
+rm -f TEMPIN

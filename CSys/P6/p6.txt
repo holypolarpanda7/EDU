@@ -1,0 +1,52 @@
+
+                             Computer Systems
+                                 Project 6
+                                 Fall 2018
+
+
+turnin code:  cs_p6
+
+
+Create a makefile that builds 2 items when the user simply types:
+    make
+
+First, build a shared object named  p6.so  which contains a function that
+can be dynamically linked or loaded:
+
+    double timestamp()
+
+Second, build a program named  p6  which takes command-line arguments.
+The number of command-line args may vary from 2 to 4 inclusive, e.g.:
+
+    ./p6  libname funcname [arg1] [arg2]
+
+where [ ] indicates that arg1 and arg2 are optional.
+
+p6 should dynamically load func from the library named libname and invoke
+it with the given arguments.  You may assume that LD_LIBRARY_PATH will be
+set prior to execution of p6 if necessary.
+
+Sample executions:
+
+    ./p6  libm-2.24.so   sqrt 4.0
+
+    ./p6  libm-2.24.so   pow  4.0  2.0
+
+    export LD_LIBRARY_PATH=.
+    ./p6  p6.so  timestamp
+
+
+libm-2.24.so is in /lib/x86_64-linux-gnu/ and is what most symlinks point
+to there for the math library.
+
+
+TURNIN info:
+    You should submit a tar file of a directory which contains all of the
+    required files (makefile, C source files, header files, etc).
+    Sample tar command to create a tar file from a dir named p6dir:
+	tar cvf p6.tar ./p6dir  ## do *NOT* use full pathname of the dir
+    After un-tarring your project, I will cd to the dir containing
+    it and type:
+        rm -rf p6
+        rm -f *.o *.so *.a
+        make

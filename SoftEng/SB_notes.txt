@@ -1,0 +1,83 @@
+No Silveer Bullet
+---WHAT IT IS---
+- the idea that there is no software solution or development process that is
+  capable of solving every application.
+- author suggestions
+	- avoid constructing what can be bought
+	- rappid prototyping in in planned iterations
+	- identify and develope future conceptual designers
+- software dev broken into essential dev & accidental dev
+
+---ESENTIAL DIFFICULTIES---
+- Complexity
+	- every different problem requires a different solution
+	- where similar problems reuse the same function
+	- every state of a software system must be described, where
+	  the number of states also must be applied to the many states of 
+	  a computer
+- Conformity
+	- each peice of software developed must be pieced together with many
+	  more, as well as conforming to the needs of the hardware platform 
+	  or many different hardware platforms
+	- hardware life is much shorter than software life so the interfacing
+          must be re-done often, so initial develpement must account for this
+- Changability
+	- new uses for the software arise when a function is implimented
+	  successfully
+	- like above, successful software often outlives its hardware and 
+	  re implimneted on a new machine
+- Invisibility
+	- Software operating throughout many processes can be multi-
+	  dimensional, this can be hard to visualize and plan
+	- often many peices have to be geometrically designed without
+	  a clear way to fit them together
+
+---HISTORICALLY SUCCESFULL SOLUTIONS TO ACCIDENTAL PROBLEMS---
+- High-Level Languages
+	- We abstract away the accidental complexity of using pure logic to
+	  describe solutions to problems
+	- the HLLs allow use to attack the essense of the problem and let
+	  the compiler do the conversion to machine lang
+- Time-Sharing
+	- allowing multiple users to share a CPU, processes occur very fast
+	  so while a person thinks and creates instructions, another person
+	  can be using the CPU
+	- can hurt reliability when the time sharing isnt handled correctly
+- Unified Programming Environments
+	- Linux!!!!!!
+	- Operating Systems that allow use to create a relaible control flow
+	  for instruction sets
+
+---HOPES FOR SILVERBULLET---
+- ADA
+	- supposed general programming language
+	- is good but is still contains much overhead
+	- dude had high hopes in 1986 lolz
+- Object Oriented Programming
+	- abstrat away further
+	- almost makes an even higher level language making dev a little
+	  more simplistic
+	- currently still lots of overhead that may not make a program
+	  more efficent
+- Artificial Intelligence
+	- this guy doesnt like AI, he seems to describe machine learning
+	  alg's but because the idea of complex machine learning was 
+	  not taken seriously then, he is one of those doubters
+- Expert Systems
+	- sounds like the guy is describing Functial PLs
+	- LAAAAAAAAAME!
+- Graphical Programming
+	- supposed to let people program by visual(instead of textual) queues
+	- not many successes
+- Program Verification
+	- Ensuring that a program meets all need and does not contain bugs
+	- Problem is that, on inception most solutions are not comprehensive
+- Environmsnts and Tools
+	- IDEs and libraries, as well as manuals
+	- today we see these as some of our greatest resources
+- Workstations
+	- Will more advanced individual systems help programmers?
+	- Author: not likely
+	- I think we have seen that it does help, as well as give
+	  us the ability to run programs that include machine learning
+	- you can go rent an amazon cluster for a few dollars an hour
